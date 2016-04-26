@@ -5,10 +5,16 @@
     <DisplayName>Simple INI Syntax Highlighter</DisplayName>
     <Description xml:space="preserve">Simple INI Syntax Highlighter
 
-</Description>
+You can get source code at https://github.com/stjeong/IniColorizer
+
+This sample will be a good starting point for creating your own syntax highlighting.</Description>
+    <MoreInfo>https://github.com/stjeong/IniColorizer</MoreInfo>
+    <GettingStartedGuide>https://github.com/stjeong/IniColorizer</GettingStartedGuide>
+    <PreviewImage>colorizer_vsix_3.png</PreviewImage>
+    <Tags>Visual Studio</Tags>
   </Metadata>
   <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,]" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
