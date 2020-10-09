@@ -1,25 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-  <Metadata>
-    <Identity Id="IniColorizer.SeongTae Jeong.aea8c27b-3b85-4943-a140-c8f1f6a28f90" Version="1.0" Language="en-US" Publisher="SeongTae Jeong" />
-    <DisplayName>Simple INI Syntax Highlighter</DisplayName>
-    <Description xml:space="preserve">Simple INI Syntax Highlighter
+    <Metadata>
+        <Identity Id="IniColorizer.SeongTae Jeong.aea8c27b-3b85-4943-a140-c8f1f6a28f90" Version="1.0" Language="en-US" Publisher="SeongTae Jeong" />
+        <DisplayName>Simple INI Syntax Highlighter</DisplayName>
+        <Description xml:space="preserve">Simple INI Syntax Highlighter
 
 You can get source code at https://github.com/stjeong/IniColorizer
 
 This sample will be a good starting point for creating your own syntax highlighting.</Description>
-    <MoreInfo>https://github.com/stjeong/IniColorizer</MoreInfo>
-    <GettingStartedGuide>https://github.com/stjeong/IniColorizer</GettingStartedGuide>
-    <PreviewImage>colorizer_vsix_3.png</PreviewImage>
-    <Tags>Visual Studio</Tags>
-  </Metadata>
-  <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,]" />
-  </Installation>
-  <Dependencies>
-    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
-  </Dependencies>
-  <Assets>
-    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
-  </Assets>
+        <MoreInfo>https://github.com/stjeong/IniColorizer</MoreInfo>
+        <GettingStartedGuide>https://github.com/stjeong/IniColorizer</GettingStartedGuide>
+        <PreviewImage>colorizer_vsix_3.png</PreviewImage>
+        <Tags>Visual Studio</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.1,]" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.7.2,)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.1,)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
 </PackageManifest>
